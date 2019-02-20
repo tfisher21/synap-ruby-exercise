@@ -1,5 +1,7 @@
 class PeopleController < ApplicationController
   def index
-    render json: {msg: "/people.json"}
+    @people = Person.all
+    # render json: {msg: "Hello"}
+    render "index.json.jbuilder"
   end
 end
