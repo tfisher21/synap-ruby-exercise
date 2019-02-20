@@ -1,24 +1,21 @@
-# README
+# Synap Ruby Exercise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a demonstration of fundamental Ruby and Ruby on Rails knowledge.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Please make sure to install gems prior to running
 
-* System dependencies
+```bash
+bundle install
+```
 
-* Configuration
+## Seeding
 
-* Database creation
+The seeds file should have all the scripting necessary to seed the database from a csv. CSV seedfiles can be found in `lib/seeds` and in `seeds.rb` you can rename the csv_file you are importing at the top.
 
-* Database initialization
+## Usage
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails s
+```
