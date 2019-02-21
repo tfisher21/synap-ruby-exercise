@@ -1,7 +1,7 @@
 class Person < ApplicationRecord
   belongs_to :organization
 
-  def address_format
+  def address
     address = Address.find_by(organization_id: organization_id)
     if address 
       {
