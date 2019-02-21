@@ -16,4 +16,8 @@ class Organization < ApplicationRecord
       return nil
     end
   end
+
+  def people_count
+    people = Person.where(organization_id: id).length
+  end
 end

@@ -5,5 +5,7 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+    @org = Organization.find_by(id: params[:id])
+    render "show.json.jbuilder"
   end
 end
