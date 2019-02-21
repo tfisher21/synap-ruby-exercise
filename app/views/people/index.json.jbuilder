@@ -8,8 +8,8 @@ json.people @people do |person|
   json.organization do
     json.id person.organization.id
     json.name person.organization.name
-    json.phone person.organization.phone
     json.domain person.organization.domain
+    json.phone person.organization.phone
   end
 
   json.address person.address_format

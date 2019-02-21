@@ -5,11 +5,11 @@ class Person < ApplicationRecord
     address = Address.find_by(organization_id: organization_id)
     if address 
       {
-        id: "#{address.id}",
-        street: "#{address.street}",
-        city: "#{address.city}",
-        state: "#{address.state}",
-        zip: "#{address.zip}",
+        id: address.id,
+        street: address.street,
+        city: address.city,
+        state: address.state,
+        zip: address.zip,
       }
     else
       return nil
