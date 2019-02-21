@@ -27,3 +27,5 @@ $ rails s
 ```
 
 and direct your browser to `localhost:3000`.
+
+## Tests

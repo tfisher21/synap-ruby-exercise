@@ -9,5 +9,13 @@ json.organization do
   json.domain person.organization.domain
   json.phone person.organization.phone
 end
-
-json.address person.organization.address
+if person.organization.address
+  json.address do
+    json.id person.organization.address.id
+    json.street person.organization.address.street
+    json.city person.organization.address.city
+    json.zip person.organization.address.zip
+  end
+else
+  json.address nil
+end
