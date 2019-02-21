@@ -10,4 +10,4 @@ json.organization do
   json.phone person.organization.phone
 end
 
-json.address person.address
+json.address person.organization.address
