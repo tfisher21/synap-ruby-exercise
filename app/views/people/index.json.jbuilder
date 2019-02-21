@@ -12,13 +12,5 @@ json.people @people do |person|
     json.domain person.organization.domain
   end
 
-  # json.address do
-  #   json.id person.address.id
-  #   json.street person.address.street
-  #   json.city person.address.city
-  #   json.state person.address.state
-  #   json.zip person.address.zip
-  # end
-
   json.address person.address_format
 end
