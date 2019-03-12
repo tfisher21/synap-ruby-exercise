@@ -1,6 +1,6 @@
 class OrganizationsController < ApplicationController
   def index
-    @orgs = Organization.all
+    @orgs = Organization.all.includes(:address)
     render "index.json.jbuilder"
   end
 

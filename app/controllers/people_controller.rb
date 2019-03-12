@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
   def index
-    @people = Person.all
+    @people = Person.all.includes(organization: [:address])
     # render json: {msg: "Hello"}
     render "index.json.jbuilder"
   end
