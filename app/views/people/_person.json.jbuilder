@@ -14,7 +14,7 @@ if person.organization.address
     json.id person.organization.address.id
     json.street person.organization.address.street
     json.city person.organization.address.city
-    json.city person.organization.address.state
+    json.state person.organization.address.state
     json.zip person.organization.address.zip
   end
 else

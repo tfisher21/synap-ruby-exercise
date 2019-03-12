@@ -8,7 +8,7 @@ if org.address
     json.id org.address.id
     json.street org.address.street
     json.city org.address.city
-    json.city org.address.state
+    json.state org.address.state
     json.zip org.address.zip
   end
 else
